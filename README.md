@@ -28,3 +28,5 @@ reposync --repoid=rhel-9-for-x86_64-baseos-rpms --download-path=/tmp/local-repo/
 ```bash
 yumdownloader --resolve grub2-efi-x64* --destdir=./x64-pkgs
 ```
+tar -czvf local-repo-backup.tar.gz local-repo/
+
