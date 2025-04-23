@@ -28,8 +28,14 @@ reposync --repoid=rhel-9-for-x86_64-baseos-rpms --download-path=/tmp/local-repo/
 ```bash
 yumdownloader --resolve grub2-efi-x64* --destdir=./x64-pkgs
 ```
+To zip
+```bash
 tar -czvf local-repo-backup.tar.gz local-repo/
-
+```
+To untar
+```bash
+tar -czvftar -xvzf filename.tar.gz
+```
 To run RHEL with a persistent volume using Docker, you can follow these steps:
 
 ### **1. Pull the Official RHEL Image**
