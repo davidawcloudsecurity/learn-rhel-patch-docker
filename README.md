@@ -70,3 +70,8 @@ cat /mnt/data/test.txt
 ```
 
 This ensures that your data remains intact across container lifecycles.
+
+```bash
+sudo rpm -ivh package_name.rpm  # For new installations
+sudo rpm -Uvh package_name.rpm  # For upgrades
+```
