@@ -14,3 +14,5 @@ For temporary shell access:
 ```bash
 docker run -it --rm registry.access.redhat.com/ubi8/ubi /bin/bash
 ```
+**3. Initiate**  
+yum install yum-utils;
