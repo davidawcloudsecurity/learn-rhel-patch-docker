@@ -14,9 +14,14 @@ For temporary shell access:
 ```bash
 docker run -it --rm registry.access.redhat.com/ubi8/ubi /bin/bash
 ```
-**3. Initiate**  
+**3. Initiate** 
+```bash
 yum install yum-utils;
-
+```
+**4. Register** 
+```bash
+subscription-manager register --username <username> --password <password>
+```
 **Specfic rpm**
 ```bash
 yumdownloader --resolve grub2-efi-x64* --destdir=./x64-pkgs
