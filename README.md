@@ -22,6 +22,8 @@ yum install yum-utils;
 ```bash
 subscription-manager register --username <username> --password <password>
 ```
+**Use reposync command to download the necessary updates**
+reposync --repoid=rhel-9-for-x86_64-baseos-rpms --download-path=/tmp/local-repo/
 **Specfic rpm**
 ```bash
 yumdownloader --resolve grub2-efi-x64* --destdir=./x64-pkgs
